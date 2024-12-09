@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    background-image: url("https://caelum-online-public.s3.amazonaws.com/assets-imersaodev/Background.png");
+    background-color: #000000;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+  }
+  
+  .container__front {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .container__body {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .page-title {
+    color: #ffffff;
+    margin: 0 0 5px;
+  }
+  
+  .page-subtitle {
+    color: #ffffff;
+    margin-top: 5px;
+  }
+  
+  .page-logo {
+    width: 200px;
+  }
+  
+  .alura-latam-logo {
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  body > img {
+    margin: 0 10px;
+  }
+  
+  img {
+    max-height: 200px;
+  }
+  
+  .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px; 
+  }
+  
+  #conversor-form {
+    background-color: #0062d0;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    margin: 0 auto;
+  }
+  
+  #conversionType {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  #valorInput {
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #efefef;
+    text-align: center;
+  }
+  
+  button {
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: blue;
+  }
+  
+  #resultado {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  #valorConvertido {
+    width: 100%;
+    padding: 5px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #efefef;
+    text-align: center;
+  }
+  #temperature-conversion-form {
+    background-color: #ff5722;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    margin: 0 auto;
+  }
+  
+  #temperatureInput {
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #efefef;
+    text-align: center;
+  }
+  
+  #temperature-conversion-form select{
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+  
+  #temperature-conversion-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  #temperature-conversion-form button {
+    background-color: #0062d0;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #temperature-conversion-form button:hover {
+    background-color: #7f2b10;
+  }
+  
+  #temperature-resultado {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  #temperatureConverted {
+    width: 100%;
+    padding: 5px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #efefef;
+    text-align: center;
+  }
+  .first-form h3,
+  .second-form h3 {
+    text-align: center; 
+  }
+  
+  .first-form h3 {
+    background-color: #0062d0;
+    color: #fff;
+    padding: 1px;
+    border-radius: 10px;
+    margin : 10px;
+  }
+  
+  .second-form h3 {
+    background-color: #ff5722;
+    color: #fff;
+    padding: 1px;
+    border-radius: 10px;
+    margin : 10px;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    #conversor-form,
+    #temperature-conversion-form {
+      width: 100%;
+    }
+
+    button {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    #valorInput,
+    #temperatureInput {
+      width: 100%;
+    }
+
+  }

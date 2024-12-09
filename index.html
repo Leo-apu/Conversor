@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Conversor</title>
+</head>
+<body>
+    <div class="container__front">
+        <h1 class="page-title">
+          Conversor de monedas y Temperatura
+        </h1>
+        <img src="https://user-images.githubusercontent.com/121910576/257302088-d2a9edb6-75e5-4118-aaba-6f53da7715dc.png" class="page-logo" alt="">
+      </div>
+      <a href="https://www.aluracursos.com/" target="_blank">
+        <img src="https://www.aluracursos.com/assets/img/home/alura-logo.1686744883.svg" alt="" class="alura-latam-logo">
+        <img src="https://caelum-online-public.s3.amazonaws.com/assets-imersaodev/Convers%C3%A3o+1.png">
+      </a>
+      
+      <div class="container__body">
+        <div class="form-container">
+          <form id="conversor-form" class="first-form">
+            <h3>Conversión de Monedas</h3>
+            <label for="conversionType">Seleccione el Tipo de Conversión:</label>
+            <select id="conversionType">
+              <option value="dolarToPesos">De Dolar a Pesos Argentinos</option>
+              <option value="pesosToDolar">De Pesos Argentinos a Dólar</option>
+            </select>
+            <label for="valorInput">Ingrese el Valor:</label>
+            <input type="number" id="valorInput">
+            <button type="button" onclick="convertirDivisas()">Convertir</button>
+            <div id="resultado">
+              <label for="valorConvertido">El valor convertido es:</label>
+              <input type="text" id="valorConvertido" readonly disabled>
+            </div>
+          </form>
+      
+          <form id="temperature-conversion-form" class="second-form">
+            <h3>Conversión de Temperatura</h3>
+            <label for="conversionType2">Seleccione el Tipo de Conversión:</label>
+            <select id="conversionType2">
+              <option value="celsiusToFahrenheit">De Celsius a Fahrenheit</option>
+              <option value="fahrenheitToCelsius">De Fahrenheit a Celsius</option>
+            </select>
+            <label for="temperatureInput">Ingrese la Temperatura:</label>
+            <input type="number" id="temperatureInput">
+            <button type="button" onclick="convertirTemperatura()">Convertir</button>
+            <div id="temperature-resultado">
+              <label for="temperatureConverted">La temperatura convertida es:</label>
+              <input type="text" id="temperatureConverted" readonly disabled>
+            </div>
+          </form>
+        </div>
+      </div>
+      <script src="main.js"></script>
+</body>
+</html>
